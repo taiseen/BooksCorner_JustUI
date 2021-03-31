@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Lucida Sans';
+}
+
 main {
 
     display  : flex;
@@ -70,7 +74,7 @@ main {
 
 .bannerTitle {
     padding         : 30px;
-    background-color: tomato;
+    background-color: white;
     font-size       : 40px;
 }
 
@@ -84,7 +88,7 @@ main {
     padding: 30px;
 
     border-radius   : 15px;
-    background-color: lightgray;
+    background-color: white;
 
     display        : flex;
     flex-flow      : wrap;
@@ -97,6 +101,7 @@ main {
     padding      : 10px;
     margin-bottom: 20px;
     margin-top   : 10px;
+    font-size    : 20px;
 }
 
 .book_form input:focus {
@@ -122,7 +127,7 @@ main {
 }
 
 .inputLabel {
-    width           : 180px;
+    width           : 205px;
     margin-top      : 10px;
     border          : 1px solid #6946F4;
     border-radius   : 8px;
