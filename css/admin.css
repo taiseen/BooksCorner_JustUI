@@ -1,0 +1,153 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    display  : flex;
+    flex-flow: wrap;
+    width    : 100%;
+
+}
+
+.sideBar {
+    width           : 20%;
+    height          : 100vh;
+    color           : white;
+    background-color: #19103F;
+
+}
+
+.sideBar .logo {
+    font-size    : 35px;
+    margin-top   : 40px;
+    margin-bottom: 60px;
+    text-align   : center;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin      : 10px auto;
+    padding     : 20px 0px;
+    padding-left: 60px;
+    text-align  : left;
+}
+
+.menu ul li:hover {
+    cursor          : pointer;
+    background-color: #2F216A;
+}
+
+.menu ul li a {
+    font-size      : 35px;
+    text-decoration: none;
+    color          : white;
+}
+
+.menu img {
+    width       : 35px;
+    margin-right: 15px;
+}
+
+/* 
+=================================
+#################################
+================================= 
+*/
+
+.book_input_area {
+
+    display         : flex;
+    flex-flow       : column wrap;
+    background-color: #F4F7FC;
+    width           : 80%;
+}
+
+.bannerTitle {
+    padding         : 30px;
+    background-color: tomato;
+    font-size       : 40px;
+}
+
+.book_form_container {
+    padding: 30px 20px;
+}
+
+.book_form {
+
+    width  : 100%;
+    padding: 30px;
+
+    border-radius   : 15px;
+    background-color: lightgray;
+
+    display        : flex;
+    flex-flow      : wrap;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.book_form input {
+    width        : 100%;
+    padding      : 10px;
+    margin-bottom: 20px;
+    margin-top   : 10px;
+}
+
+.book_form input:focus {
+    outline: none;
+}
+
+.book_form label {
+    margin-bottom: 22px;
+}
+
+.input_flex {
+    width: 47%;
+}
+
+.inputfile {
+    display: none;
+}
+
+
+.file_width img {
+    width       : 30px;
+    margin-right: 7px;
+}
+
+.inputLabel {
+    width           : 180px;
+    margin-top      : 10px;
+    border          : 1px solid #6946F4;
+    border-radius   : 8px;
+    background-color: #E3DCFF;
+    color           : #6946F4;
+    padding         : 2px 25px;
+    cursor          : pointer;
+    transition      : .4s ease-in-out;
+
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+}
+
+.inputLabel:hover {
+    box-shadow: 2px 2px 8px 0px #6946f466;
+}
+
+
+
+@media screen and (max-width:560px) {
+
+    .sideBar {
+        width: 100%;
+    }
+
+}

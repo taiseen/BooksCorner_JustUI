@@ -1,0 +1,180 @@
+/* 1-April-2021 */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family     : 'Lucida Sans';
+    background-color: #FCFCFC;
+}
+
+header {
+    margin         : 40px auto 10px;
+    display        : flex;
+    flex-flow      : wrap;
+    justify-content: space-around;
+    align-items    : baseline;
+}
+
+header h5 {
+    font-size    : 50px;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color          : black;
+    padding        : 10px 30px;
+    font-weight    : bold;
+    font-size      : 25px;
+}
+
+header nav ul li a:hover {
+    background-color: #6946F4;
+    color           : white;
+    cursor          : pointer;
+    border-radius   : 5px;
+}
+
+/* main Section start  */
+
+main {
+    display  : flex;
+    flex-flow: column wrap;
+}
+
+.search {
+
+    padding-left    : 10px;
+    margin          : 40px auto;
+    background-color: #F1F1F1;
+    border-radius   : 5px;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.search img {
+    width  : 35px;
+    padding: 0 0 0 5px;
+}
+
+.search input {
+    width           : 450px;
+    padding         : 10px;
+    margin          : 0 10px;
+    font-size       : 25px;
+    background-color: #F1F1F1;
+    border          : 0;
+    outline         : 0;
+}
+
+.search input:focus {
+    background-color: white;
+    border-radius   : 5px;
+}
+
+.search button {
+    background-color          : #6946F4;
+    padding                   : 15px 60px;
+    color                     : white;
+    font-size                 : 24px;
+    border                    : 0;
+    outline                   : 0;
+    border-top-right-radius   : 5px;
+    border-bottom-right-radius: 5px;
+    cursor                    : pointer;
+}
+
+/* 
+######################################
+            Book CSS Start  
+######################################
+*/
+
+.books_container {
+    width          : 98%;
+    margin         : 20px auto;
+    display        : flex;
+    flex-flow      : wrap;
+    justify-content: space-evenly;
+    align-items    : center;
+
+}
+
+.book_box {
+    margin             : 30px 10px;
+    width              : 400px;
+    border-radius      : 15px;
+    box-shadow         : 0 0 10px 1px rgba(0, 0, 0, 0.5);
+
+    display  : flex;
+    flex-flow: column;
+}
+
+.book_cover_photo {
+    margin          : 23px 23px 15px 23px;
+    width           : 350px;
+    text-align      : center;
+    background-color: #F1F1F1;
+    border-radius   : 15px
+}
+
+.book_cover_photo img {
+    width        : 75%;
+    margin       : 20px;
+    border-radius: 15px;
+    object-fit   : cover;
+
+}
+
+.book_info {
+    display     : flex;
+    flex-flow   : column wrap;
+    padding-left: 25px;
+
+}
+
+.book_price_and_buy {
+
+    margin-top     : 10px;
+    display        : flex;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+    padding-right : 25px;
+}
+
+.book_price_and_buy p {
+    font-size  : 30px;
+    font-weight: bold;
+    color      : #6946F4;
+}
+
+.book_price_and_buy button {
+    font-size       : 20px;
+    padding         : 10px 25px;
+    border-radius   : 8px;
+    border          : none;
+    outline         : none;
+    color           : white;
+    background-color: rgb(105, 70, 244);
+    cursor          : pointer;
+    transition      : .3s ease-in-out;
+}
+
+
+.book_price_and_buy button:hover {
+    box-shadow: 0 5px 10px 0 rgb(79 42 222 / 70%);
+}
