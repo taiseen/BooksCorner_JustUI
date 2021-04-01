@@ -23,13 +23,11 @@ main {
 }
 
 .logo {
-    padding  : 20px;
-    font-size: 35px;
+    padding      : 20px;
+    font-size    : 35px;
+    margin-bottom: 20px;
 }
 
-.menu {
-    margin-top: 20px;
-}
 
 .menu ul {
     list-style: none;
@@ -60,16 +58,14 @@ main {
 
 /* 
 ####################################################
-                Book List Area
+                Book Area Start 
 #################################################### 
 */
 
-.book_input_list {
-    display  : flex;
-    flex-flow: column;
-
-
-
+.book_input_list,
+.book_input_area {
+    display         : flex;
+    flex-flow       : column;
     background-color: antiquewhite;
     width           : 100%;
 }
@@ -77,52 +73,28 @@ main {
 .bannerTitle {
     padding         : 20px 30px;
     background-color: white;
-
+    font-size       : 30px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
 }
 
-.book_list_container {
-    margin          : 30px 20px;
-    padding         : 20px;
-    background-color: white;
-    border-radius   : 10px;
+.bannerTitle a {
+    text-decoration: none;
+    font-size      : 18px;
+    padding        : 10px 30px;
+    border-radius  : 10px;
 }
 
-table {
-    width          : 100%;
-    table-layout   : auto;
-    text-align     : left;
-    border-collapse: collapse;
-    font-size      : 20px;
-}
+.bannerTitle a:hover {
+    background-color: #2F226A;
+    color           : white;
 
-thead tr th {
-    background-color: #F5F6FA;
-    padding         : 20px;
-}
-
-tbody tr td {
-    padding: 0px 20px;
-}
-
-tbody tr td img {
-    width : 40px;
-    cursor: pointer;
-}
-
-tr td:last-child {
-    padding   : 10px 0px;
-    text-align: center;
-    width     : 120px;
-}
-
-tr:hover {
-    background-color: #ddd;
-    cursor          : pointer;
 }
 
 /* 
 ####################################################
-                Responsive
+            Responsive For Both Page
 #################################################### 
 */
 
